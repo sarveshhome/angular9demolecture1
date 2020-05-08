@@ -12,6 +12,8 @@ export class AppComponent  {
   finalresult ='';
   sign ='';
   onClickMe(val){
+    if(this.firstNumber!='' && this.secondNumber !='')
+    {
     console.log(val);
     if(val==='+'){
       this.finalresult = String(parseFloat(this.firstNumber) + parseFloat(this.secondNumber));
@@ -39,6 +41,12 @@ export class AppComponent  {
          this.secondNumber ='';
         this.sign ='';
       }
+    }
+    else
+    {
+        window.alert('Enter the number');
+    }
+
 
   }
   onClickMinus(){
