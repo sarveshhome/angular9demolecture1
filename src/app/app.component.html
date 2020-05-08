@@ -1,0 +1,22 @@
+<hello name="{{ name }}"></hello>
+<div class="Container">
+     <div class="row">
+          <div class="col">
+              <input type="text" [(ngModel)]='firstNumber' />
+              <input type="text" readonly [(ngModel)]='sign'/>
+              <input type="text" [(ngModel)]='secondNumber' />
+              {{finalresult}}
+          </div>
+     </div>
+     <div class="row">
+        
+        <button (click)="onClickMe('+')">+</button>
+        <button (click)="onClickMinus(this)">-</button>
+     </div>
+     <div class="row">
+        
+     </div>
+     <div class="row">
+        
+     </div>
+</div>
