@@ -1,9 +1,9 @@
 <hello name="{{ name }}"></hello>
 <div class="container">
      <div class="row form-group">
-           <div class="col-xs-2 border border-primary"> <input type="text" [(ngModel)]='firstNumber' /> </div>
+           <div class="col-xs-2 border border-primary"> <input type="number" [(ngModel)]='firstNumber' /> </div>
            <div class="col-xs-2 border border-info"> <input type="text" readonly [(ngModel)]='sign'/> </div>
-           <div class="col-xs-2  border border-info"> <input type="text" [(ngModel)]='secondNumber' />  </div>
+           <div class="col-xs-2  border border-info"> <input type="number" [(ngModel)]='secondNumber' />  </div>
               {{finalresult}}         
      </div>
      <div class="row">    
