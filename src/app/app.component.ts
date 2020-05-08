@@ -13,8 +13,33 @@ export class AppComponent  {
   sign ='';
   onClickMe(val){
     console.log(val);
-      this.finalresult = String(parseInt(this.firstNumber) + parseInt(this.secondNumber));
+    if(val==='+'){
+      this.finalresult = String(parseFloat(this.firstNumber) + parseFloat(this.secondNumber));
       this.sign ='+';
+      }
+      else if(val=== '-')
+      {
+        this.finalresult = String(parseFloat(this.firstNumber) - parseFloat(this.secondNumber));
+        this.sign ='-';
+      }
+      else if(val=== '*')
+      {
+        this.finalresult = String(parseFloat(this.firstNumber) * parseFloat(this.secondNumber));
+        this.sign ='*';
+      }
+      else if(val=== '/')
+      {
+        this.finalresult = String(parseFloat(this.firstNumber) / parseFloat(this.secondNumber));
+        this.sign ='-';
+      }
+      else if(val=== 'c')
+      {
+        this.finalresult = '';
+        this.firstNumber ='';
+         this.secondNumber ='';
+        this.sign ='';
+      }
+
   }
   onClickMinus(){
       this.finalresult = String(parseInt(this.firstNumber) - parseInt(this.secondNumber));
