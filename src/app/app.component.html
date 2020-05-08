@@ -1,21 +1,17 @@
 <hello name="{{ name }}"></hello>
-<div class="Container">
-     <div class="row">
-          <div class="col">
-              <input type="text" [(ngModel)]='firstNumber' />
-              <input type="text" readonly [(ngModel)]='sign'/>
-              <input type="text" [(ngModel)]='secondNumber' />
-              {{finalresult}}
-          </div>
+<div class="container">
+     <div class="row form-group">
+           <div class="col-xs-2 border border-primary"> <input type="text" [(ngModel)]='firstNumber' /> </div>
+           <div class="col-xs-2 border border-info"> <input type="text" readonly [(ngModel)]='sign'/> </div>
+           <div class="col-xs-2  border border-info"> <input type="text" [(ngModel)]='secondNumber' />  </div>
+              {{finalresult}}         
      </div>
-     <div class="row">
-        
-        <button (click)="onClickMe('+')">+</button>
-        <button (click)="onClickMe('-')">-</button>
-        <button (click)="onClickMe('*')">*</button>
-        <button (click)="onClickMe('/')">/</button>
-        <button (click)="onClickMe('c')">Clear</button>
-        
+     <div class="row">    
+       <div class="col "> <button (click)="onClickMe('+')">+</button></div>           
+        <div class="col"><button (click)="onClickMe('-')">-</button></div> 
+        <div class="col"><button (click)="onClickMe('*')">*</button></div> 
+        <div class="col"><button (click)="onClickMe('/')">/</button></div> 
+        <div class="col"><button (click)="onClickMe('c')">Clear</button></div>
      </div>
      <div class="row">
         
